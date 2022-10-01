@@ -3,8 +3,6 @@ name = "fast-api-example"
 version = "0.1.0"
 description = ""
 authors = ["Thiago Lima <e10.thiago@gmail.com>"]
-readme = "README.md"
-packages = [{include = "fast_api_example"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
