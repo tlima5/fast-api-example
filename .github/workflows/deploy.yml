@@ -83,6 +83,13 @@ jobs:
 
       - name: 'Use gcloud CLI'
         run: 'gcloud info'
+        
+      - name: Build
+        run: |-
+          gcloud builds submit \
+            --quiet \
+            --tag "gcr.io/${{ secrets.GCP_PROJECT }}/fast-api-example:$GITHUB_SHA"
+
 
       # # Configure Docker with Credentials
       # - name: Configure Docker
