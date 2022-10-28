@@ -16,7 +16,7 @@ WORKDIR /app
 
 ENV PATH="/opt/venv/bin:$PATH"
 
-CMD uvicorn src.app:app --host 0.0.0.0 --port 8080
+CMD uvicorn main:app --host 0.0.0.0 --port 8080
 
 COPY --from=builder /opt/venv /opt/venv
 
